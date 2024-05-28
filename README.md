@@ -34,11 +34,11 @@ Este repositório contém a aplicação backend usando Nest.js. O objetivo é pe
 
 ## Configuração do Backend
 
-1. Clone o repositório e navegue até a pasta `backend`:
+1. Clone o repositório:
 
     ```bash
     git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio/backend
+    cd seu-repositorio
     ```
 
 2. Instale as dependências:
@@ -49,9 +49,9 @@ Este repositório contém a aplicação backend usando Nest.js. O objetivo é pe
     npm install
     ```
 
-3. Crie um banco de dados PostgreSQL na sua máquina. Você pode usar uma ferramenta como DBeaver ou o terminal para criar o banco de dados.
+3. Crie um banco de dados PostgreSQL na sua máquina.
 
-4. Configure a variável de ambiente `DATABASE_URL` no arquivo `.env`:
+4. Configure a variável de ambiente `DATABASE_URL` no arquivo `.env` da aplicação Nest.js com os dados do seu banco de dados PostgreSQL:
 
     ```dotenv
     DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
