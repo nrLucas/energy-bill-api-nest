@@ -23,51 +23,52 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+Este repositório contém duas aplicações: uma aplicação frontend usando Next.js e uma aplicação backend usando Nest.js. O objetivo é permitir o upload e processamento de faturas de energia elétrica.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Requisitos
 
-## Installation
+- Node.js
+- PostgreSQL
+- Prisma
+- Yarn ou npm
 
-```bash
-$ yarn install
-```
+## Configuração do Backend
 
-## Running the app
+1. Clone o repositório e navegue até a pasta `backend`:
 
-```bash
-# development
-$ yarn run start
+    ```bash
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    cd seu-repositorio/backend
+    ```
 
-# watch mode
-$ yarn run start:dev
+2. Instale as dependências:
 
-# production mode
-$ yarn run start:prod
-```
+    ```bash
+    yarn install
+    # ou
+    npm install
+    ```
 
-## Test
+3. Crie um banco de dados PostgreSQL na sua máquina. Você pode usar uma ferramenta como DBeaver ou o terminal para criar o banco de dados.
 
-```bash
-# unit tests
-$ yarn run test
+4. Configure a variável de ambiente `DATABASE_URL` no arquivo `.env`:
 
-# e2e tests
-$ yarn run test:e2e
+    ```dotenv
+    DATABASE_URL=postgresql://usuario:senha@localhost:5432/nome_do_banco
+    ```
 
-# test coverage
-$ yarn run test:cov
-```
+5. Rode as migrações do Prisma para criar as tabelas no banco de dados:
 
-## Support
+    ```bash
+    npx prisma migrate dev --name init
+    ```
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+6. Inicie o servidor Nest.js:
 
-## Stay in touch
+    ```bash
+    yarn start:dev
+    # ou
+    npm run start:dev
+    ```
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+    O servidor estará rodando em `http://localhost:3001`.
