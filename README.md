@@ -23,23 +23,17 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Descrição
-Este repositório contém a aplicação backend usando Nest.js. O objetivo é permitir o upload e processamento de faturas de energia elétrica.
+Este repositório contém a aplicação backend usando Nest.js do projeto Lumi. O objetivo é permitir o upload e processamento de faturas de energia elétrica.
 
 ## Requisitos
 
 - Node.js
 - PostgreSQL
 - Prisma
-- Yarn ou npm
 
 ## Configuração do Backend
 
-1. Clone o repositório:
-
-    ```bash
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
-    ```
+1. Clone o repositório
 
 2. Instale as dependências:
 
